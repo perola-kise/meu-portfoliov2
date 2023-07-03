@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'Righteous';
+    src: url('/_fontes/Righteous-Regular.ttf');
+}
+
+*::after{
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body{
+    background-color: #0E2954;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+    color: #2E8A99;
+    text-decoration: none;
+}
+
+.pagina-texto{
+    font-size: 1.5rem;
+}
+
+div{
+     max-width: 50rem;
+     margin-inline: auto;
+     padding-inline: 1rem;
+          
+}
+
+#corpo-intro{
+    padding: 5% 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.pagina-intro{
+    width: 50%;
+}
+
+.pagina-intro a{
+    display: flex;
+    justify-content: center;
+}
+
+.img-icone{
+    width: 35%;
+    border-radius: 500px;
+}
+
+.cabecalho{
+    text-align: center;
+    color: #ffffff;
+}
+
+/* .cabecalho h1{
+
+}
+
+.titulo-portfolio{
+    text-align: center;
+    color: #ffffff;
+} */
+
+.titulo{
+    font-size: 3rem;
+    margin-top: 20px;
+    padding-top: 0;
+}
+
+.titulo-projetos{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.habilidades{
+    list-style-type: square;
+}
+
+section{
+    padding-block: 3rem;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 40vh;
+    overflow-x: hidden;
+}
+
+section:nth-child(1){
+    background-color: #2E8A99;
+    color: #0E2954;
+    
+}
+
+section:nth-child(3){
+    background-color: #2E8A99;
+    background-image: url('../__imagens/smart_tech.jpg');
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    
+}
+
+.album-projetos{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+ul#album-projetos{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.album-project{
+    display: flex;
+    width: 80%;
+}
+
+.album-projetos:nth-child(2){
+    transition-delay: 200ms;
+}
+.album-projetos:nth-child(3){
+    transition-delay: 400ms;
+}
+
+article{
+    padding: auto;
+}
+
+ul#album-projetos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-projetos li{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    border-radius: 13px;
+    -webkit-transition: all .4s ease-in;
+}
+
+.html{
+        background: url("../__imagens/html_icon.png") no-repeat;
+        background-position: 50% 50%;
+        background-size: 100px 100px;
+        background-color: #ffffff;
+    }
+    
+.javascript{
+        background: url("../__imagens/javascript_icon.png") no-repeat;
+        background-position: 50% 50%;
+        background-size: 100px 100px;
+        background-color: #ffffff;
+    }
+    
+    
+    
+.sql{
+        background: url("../__imagens/sql_icon.png") no-repeat;
+        background-position: 50% 50%;       
+        background-size: 100px 100px;
+        background-color: #ffffff;
+    }
+
+.java{
+        background: url("../__imagens/java_icon.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 100px 100px;
+        background-color: #ffffff;
+    }
+
+
+ul#album-projetos li:hover{
+        -webkit-transform: scale(1.5);
+    }
+    
+ul#album-projetos li:hover span{
+        opacity: 1;
+    }
+
+.html:hover{
+    background: url(../__imagens/incompleto.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+
+.javascript:hover{
+    background: url(../__imagens/incompleto.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+
+.sql:hover{
+    background: url(../__imagens/incompleto.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+
+.java:hover{
+    background: url(../__imagens/incompleto.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+
+ul#album-projetos li#foto01-1:hover{
+    background: none;
+    background-color: #2E8A99;
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+
+ul#album-projetos li#foto01-2:hover{
+    background: none;
+    background-color: #2E8A99;
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+
+ul#album-projetos li#foto01-3:hover{
+    background: none;
+    background-color: #2E8A99;
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+
+ul#album-projetos li#foto02-1:hover{
+    background: none;
+    background-color: #2E8A99;
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+
+
+.descricao{
+    background-size: 50% 50%;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    transition: 0.6s;
+    margin-top: 10px;
+    font-size: .75rem;
+}
+
+.descricao:hover{
+    opacity: 1;
+}
+
+
+input{
+
+    border: 1px solid #0E2954;
+}
+
+.pagina-contato{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.pagina-contato article{
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#cFields{
+    width: 300px;
+    height: 150px;
+    
+}
+
+
+input[type="submit"]{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: 'Righteous', sans-serif;
+    color: #0E2954;
+    border-radius: 13px;
+    border: 1px solid #0E2954;
+    cursor: pointer;
+    margin-top: 2px;
+    width: 300px;
+    
+}
+
+input[type="text"]{
+    height: 30px;
+}
+
+input[type="email"]{
+    height: 30px;
+}
+
+.pagina-midia{
+    display: flex;
+    gap: 50px;
+}
+
+.pagina-midia img{
+    height: 75px;
+    padding-bottom: 0;
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+#curriculo{
+    text-decoration: none;
+    color: #2E8A99;
+    background-color: #ffffff;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid #0E2954;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.25s ease-in-out;
+
+}
+
+@media screen and (max-width:1200px) {
+    #corpo-intro{
+        flex-direction: column-reverse;
+    }
+    ul#album-projetos li{
+        width: 100px;
+        height: 100px;
+    }
+
+.pagina-projetos{
+    justify-content: center;
+}
+
+.html{
+    background-position: 30% 30%;       
+    background-size: 100px 100px;
+}
+.javascript{
+    background-position: 30% 30%;       
+    background-size: 100px 100px;
+}
+
+.sql{
+    background-position: 30% 30%;       
+    background-size: 100px 100px;
+}
+
+.java{
+    background-position: 30% 30%;       
+    background-size: 100px 100px;
+}
+
+ul#album-projetos li:hover{
+        background-size: 30% 30%;
+    }
+
+.html:hover{
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+.javascript:hover{
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+.sql:hover{
+        background-position: 0px 0px;
+        background-size: 10px 210px;
+    }
+    
+.java:hover{
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+.pagina-midia img{
+    height: 50px;
+}
+
+section{
+    padding-top: 50px;
+    justify-content: center;
+    min-height: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+}
+
+@media screen and (max-width:800px){
+    .pagina-intro a#curriculo{
+        width: 150px;
+    }
+}
