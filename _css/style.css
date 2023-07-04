@@ -351,17 +351,39 @@ input[type="email"]{
 
 }
 
-@media screen and (max-width:1200px) {
-    #corpo-intro{
+    @media screen and (max-width:1200px) {
+#corpo-intro{
         flex-direction: column-reverse;
         padding-left: 0;
         padding-right: 0;
         text-align: center;
+        justify-content: center;
+        gap: 10px;
     }
-    ul#album-projetos li{
+
+.pagina-intro a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagina-texto{
+    font-size: .80rem;
+    padding: 0;
+}
+
+.sub-titulo{
+    font-size: 1rem;
+}
+
+.habilidades{
+    font-size: .80rem;
+}
+
+ul#album-projetos li{
         width: 100px;
         height: 100px;
     }
+
 
 .pagina-projetos{
     justify-content: center;
@@ -433,5 +455,6 @@ section{
 @media screen and (max-width:800px){
     .pagina-intro a#curriculo{
         width: 150px;
+        align-items: baseline;
     }
 }
