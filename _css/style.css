@@ -28,7 +28,6 @@ body{
 div{
      max-width: 50rem;
      margin-inline: auto;
-     padding-inline: 1rem;
           
 }
 
@@ -106,7 +105,7 @@ section:nth-child(1){
 section:nth-child(3){
     background-color: #2E8A99;
     background-image: url('../__imagens/smart_tech.jpg');
-    background-size: 1500px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #ffffff;
@@ -365,26 +364,26 @@ input[type="email"]{
 }
 
 .html{
-    background-position: 30% 30%;       
+    background-position: 100% 100%;       
     background-size: 100px 100px;
 }
 .javascript{
-    background-position: 30% 30%;       
+    background-position: 100% 100%;       
     background-size: 100px 100px;
 }
 
 .sql{
-    background-position: 30% 30%;       
+    background-position: 100% 100%;       
     background-size: 100px 100px;
 }
 
 .java{
-    background-position: 30% 30%;       
+    background-position: 100% 100%;       
     background-size: 100px 100px;
 }
 
 ul#album-projetos li:hover{
-        background-size: 30% 30%;
+        background-size: 100% 100%;
     }
 
 .html:hover{
@@ -399,7 +398,7 @@ ul#album-projetos li:hover{
     
 .sql:hover{
         background-position: 0px 0px;
-        background-size: 10px 210px;
+        background-size: 10px 100px;
     }
     
 .java:hover{
@@ -418,6 +417,12 @@ section{
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.pagina-contato{
+    text-align: center;
+    flex-direction: column;
+}
+
 
 }
 
