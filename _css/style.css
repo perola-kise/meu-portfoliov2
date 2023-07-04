@@ -50,7 +50,8 @@ div{
 }
 
 .img-icone{
-    width: 35%;
+    padding-top: 5px;
+    width: 45%;
     border-radius: 500px;
 }
 
@@ -353,6 +354,9 @@ input[type="email"]{
 @media screen and (max-width:1200px) {
     #corpo-intro{
         flex-direction: column-reverse;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
     }
     ul#album-projetos li{
         width: 100px;
