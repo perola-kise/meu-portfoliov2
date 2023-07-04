@@ -51,7 +51,7 @@ div{
 
 .img-icone{
     padding-top: 5px;
-    width: 45%;
+    width: 35%;
     border-radius: 500px;
 }
 
@@ -356,27 +356,26 @@ input[type="email"]{
         flex-direction: column-reverse;
         padding-left: 0;
         padding-right: 0;
-        text-align: center;
-        justify-content: center;
-        gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px;
     }
 
-.pagina-intro a{
-    margin-left: auto;
-    margin-right: auto;
+.titulo{
+    font-size: 1.5rem;
 }
 
 .pagina-texto{
-    font-size: .80rem;
+    font-size: 1rem;
     padding: 0;
 }
 
 .sub-titulo{
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .habilidades{
-    font-size: .80rem;
+    font-size: 1rem;
 }
 
 ul#album-projetos li{
